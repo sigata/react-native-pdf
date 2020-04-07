@@ -344,6 +344,7 @@ export default class PdfView extends Component {
                     {...props}
                     centerContent={this.state.centerContent}
                     pinchGestureEnabled={false}
+                    nestedScrollEnabled = {true}
                 />}
                 initialScrollIndex={this.props.page < 1 ? 0 : this.props.page - 1}
                 onViewableItemsChanged={this._onViewableItemsChanged}
